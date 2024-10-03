@@ -4,6 +4,6 @@ public class Person {
     String name;
 
     void sayHello(){
-        System.out.println("Hello");
+        System.out.println("My name is "+name);
     }
 }
