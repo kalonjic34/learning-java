@@ -31,4 +31,10 @@ public class Person {
     public void setHeight(double height) {
         this.height = height;
     }
+
+    public String toString(){
+        return "Name: "+name+ ", height: "+height;
+    }
+
+
 }

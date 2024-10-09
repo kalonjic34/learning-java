@@ -5,6 +5,8 @@ public class App {
      * 1. Constructors
      * 
      * 2. Constructors with parameters
+     * 
+     * 3. toString
      */
     public static void main(String[] args) {
         Person person1 = new Person("Chris", 180.0);
@@ -12,14 +14,10 @@ public class App {
         Person person3 = new Person();
 
 
-        System.out.println(person1.getName());
-        System.out.println(person1.getHeight());
+        System.out.println(person1.toString());
+        System.out.println(person2.toString());
+        System.out.println(person3.toString());
 
-        System.out.println(person2.getName());
-        System.out.println(person2.getHeight());
-
-        System.out.println(person3.getName());
-        System.out.println(person3.getHeight());
     }
     
 }
