@@ -4,12 +4,12 @@ public class Person {
     String name;
     int age;
 
-    void setName(String theName){
-        name = theName;
+    void setName(String name){
+        this.name = name;
     }
 
-    void setAge(int theAge){
-        age = theAge;
+    void setAge(int age){
+        this.age = age;
     }
 
     String getName(){
