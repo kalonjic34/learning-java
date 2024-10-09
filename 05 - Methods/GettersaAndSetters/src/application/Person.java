@@ -1,22 +1,22 @@
 package application;
 
 public class Person {
-    String name;
-    int age;
+    private String name;
+    private int age;
 
-    void setName(String name){
+    public void setName(String name){
         this.name = name;
     }
 
-    void setAge(int age){
+    public void setAge(int age){
         this.age = age;
     }
 
-    String getName(){
+    public String getName(){
         return name;
     }
 
-    int getAge(){
+    public int getAge(){
         return age;
     }
 }

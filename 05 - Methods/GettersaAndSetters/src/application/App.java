@@ -4,7 +4,9 @@ public class App {
     /*
      * Getters and setters
      * 
-     * This
+     * This keyword
+     * 
+     * Public and private
      */
     public static void main(String[] args) {
         Person person1 = new Person();
