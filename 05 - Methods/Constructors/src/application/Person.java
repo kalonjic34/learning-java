@@ -5,10 +5,14 @@ public class Person {
     private double height;
     
 
-    public Person() {
-        name = "?";
-        height = 0.0;
-        System.out.println("Created a person!");
+    public Person(String name, double height) {
+        this.name = name;
+        this.height = height;
+    }
+
+    public Person(){
+        this.name ="?";
+        this.height = 0.0;
     }
     
 

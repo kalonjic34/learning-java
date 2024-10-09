@@ -2,17 +2,13 @@ package application;
 
 public class App {
     /*
-     * Constructors
+     * 1. Constructors
+     * 
+     * 2. Constructors with parameters
      */
     public static void main(String[] args) {
-        Person person1 = new Person();
-        person1.setName("Chris");
-        person1.setHeight(180.0);
-
-        Person person2 = new Person();
-        person2.setName("Sam");
-        person2.setHeight(160.5);
-
+        Person person1 = new Person("Chris", 180.0);
+        Person person2 = new Person("Sam", 160.5);
         Person person3 = new Person();
 
 
