@@ -2,7 +2,8 @@ package application;
 
 public class Hangman {
 
-    private boolean running = true;
+    private boolean running = false;
+    private RandomWord word = new RandomWord();
 
     public void run() {
         while(running){
@@ -21,7 +22,7 @@ public class Hangman {
     }
 
     void displayWord(){
-        System.out.println("displayWord");
+        System.out.println(word);
     }
     
 }
