@@ -1,22 +1,28 @@
 package test;
 
-import java.util.Random;
-
 public class Test {
     /*
-     * Random values test
+     * Char type
      */
     public static void main(String[] args) {
-        int[] values = {2,4,6,8};
-
-        Random random = new Random();
-
-        for(int i = 0;i<100;i++){
-            int randomValue = values[random.nextInt(values.length)];
-            System.out.println(randomValue);
-            System.out.println(" ");
-        }
-    
         
+        char c1 = 'A';
+        char c2 = 'A';
+
+        System.out.println(c1);
+
+        System.out.println(c1 == c2);
+
+        char c3 = '\u0000';
+        System.out.println("'" +c3+"'");
+
+        char c4 = '\u261F';
+        System.out.println("'" +c4+"'");
+
+        char c5 = '\u00A9';
+        System.out.println("'" +c5+"'");
+
+        char c6 = 65;
+        System.out.println("'" +c6+"'");
     }
 }
