@@ -20,11 +20,7 @@ public class RandomWord {
         StringBuilder sb = new StringBuilder();
 
         for(char c: characters){
-            if(c=='\u0000'){
-                sb.append('_');
-            }else{
-                sb.append(c);
-            }
+            sb.append(c=='\u0000' ? ' ': c);
             sb.append(' ');
         }
         return sb.toString();
