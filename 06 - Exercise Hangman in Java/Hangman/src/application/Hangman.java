@@ -18,12 +18,16 @@ public class Hangman {
     }
 
     private void checkUserInput() {
-       System.out.println("checkUserInput");
+       if (word.isComplete()) {
+        System.out.println("You have won");
+        System.out.println("The word is: "+word);
+        running = false;
+       }
     }
 
     private void getUserInput() {
        System.out.println("getUserInput");
-       
+
        // Ask the user to enter a character
        // Get the character as a string
        // Pass the character to RandomWord as the
@@ -36,6 +40,10 @@ public class Hangman {
 
     void displayWord(){
         System.out.println(word);
+    }
+
+    public void close() {
+        scan.close();
     }
     
 }
