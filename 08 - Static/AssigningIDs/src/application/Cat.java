@@ -4,8 +4,15 @@ package application;
 public class Cat {
     private String name;
     public static final String FOOD = "Cat food";
-    private static int count =0;
+    private static int count = 0;
     private int id;
+
+    static double averageHeight = 215/7.0;
+
+    static {
+        averageHeight = 215/7.0; 
+        System.out.println("Hello");
+    }
 
 
     public Cat(String name) {

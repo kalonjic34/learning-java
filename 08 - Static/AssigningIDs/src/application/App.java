@@ -2,7 +2,9 @@ package application;
 
 public class App {
     /*
-     * Assigning IDs
+     * 1.Assigning IDs
+     * 
+     * 2. Static Initialization Blocks
      */
     public static void main(String[] args) {
 
