@@ -6,4 +6,8 @@ public class HouseCat extends Cat{
     public void vocalize(){
         System.out.println("Meow!!");
     }
+
+    public void purr(){
+        System.out.println("Purr!!");
+    }
 }
