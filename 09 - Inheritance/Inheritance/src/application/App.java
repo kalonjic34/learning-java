@@ -1,5 +1,9 @@
 package application;
 
+import entities.Apple;
+import entities.Banana;
+import entities.Fruit;
+
 public class App {
     /*
      * 1. Inheritance
@@ -7,6 +11,7 @@ public class App {
      * 3. The Override Annotation
      * 4. Subtype Polymorphism
      * 5. Casting and Runtime Errors
+     * 6. Protected
      */
     public static void main(String[] args) {
 
@@ -17,7 +22,7 @@ public class App {
             cat.vocalize();
             cat.hunt();
         }
-        */
+        
 
         Cat cat1 = new HouseCat();
         cat1.hunt();
@@ -32,6 +37,13 @@ public class App {
         cat2.hunt();
         cat2.vocalize();
         cat2.purr();
+        */
+
+        Fruit fruit1 = new Apple();
+        System.out.println(fruit1);
+
+        Fruit fruit2 = new Banana();
+        System.out.println(fruit2);
 
     }
 }
