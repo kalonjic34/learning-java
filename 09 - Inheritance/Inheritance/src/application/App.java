@@ -4,6 +4,7 @@ public class App {
     /*
      * 1. Inheritance
      * 2. Overriding Methods
+     * 3. The Override Annotation
      */
     public static void main(String[] args) {
         /* 
@@ -22,5 +23,10 @@ public class App {
         Tiger cat2 = new Tiger();
         cat2.vocalize();
         cat2.hunt();
+
+        Lion cat3 = new Lion();
+        cat3.vocalize();
+        cat3.hunt();
+
     }
 }
