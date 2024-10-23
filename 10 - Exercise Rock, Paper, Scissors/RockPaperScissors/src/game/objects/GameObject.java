@@ -1,6 +1,6 @@
 package game.objects;
 
-public class GameObject {
+public class GameObject implements Comparable<GameObject>{
     private int id;
     private String name;
 
@@ -12,10 +12,6 @@ public class GameObject {
             /* scissors*/     {-1,       1,       0,},
              
     };
-
-    public int compareTo(GameObject other){
-        return comparison[id][other.id];
-    }
 
     protected int getId() {
         return this.id;
@@ -41,5 +37,9 @@ public class GameObject {
             "}";
     }
 
-    
+    @Override
+    public int compareTo(GameObject other){
+        return comparison[id][other.id];
+    }
+
 }
