@@ -13,7 +13,7 @@ public class Game {
     private GameObject[] objects = {new Rock(), new Paper(), new Scissors()};
 
     public void run(){
-        System.out.println("Game running...");
+        String[] status = {"lose","win","draw"};
 
         Random random = new Random();
         Scanner scan = new Scanner(System.in);
@@ -31,7 +31,7 @@ public class Game {
         System.out.println(("You choose: "+obj1));
         System.out.println(("The computer chose: "+obj2));
 
-        System.out.println(obj2.compareTo(obj1));
+        System.out.println(status[obj2.compareTo(obj1)+1]);
 
         scan.close();
     }
