@@ -13,6 +13,9 @@ public class GameObject {
              
     };
 
+    public int compareTo(GameObject other){
+        return comparison[id][other.id];
+    }
 
     protected int getId() {
         return this.id;
