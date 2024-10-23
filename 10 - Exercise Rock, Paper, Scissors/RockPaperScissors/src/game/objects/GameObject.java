@@ -31,10 +31,7 @@ public class GameObject implements Comparable<GameObject>{
 
     @Override
     public String toString() {
-        return "GameObject {" +
-            " id='" + getId() + "'" +
-            ", name='" + getName() + "'" +
-            "}";
+        return name;
     }
 
     @Override
