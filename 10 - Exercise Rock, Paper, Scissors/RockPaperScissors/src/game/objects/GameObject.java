@@ -4,6 +4,15 @@ public class GameObject {
     private int id;
     private String name;
 
+    private int[][] comparison = {
+            //              rock    paper   scissors
+            
+            /* rock */        {0,       -1,       1,},
+            /* paper*/        {1,        0,      -1,},
+            /* scissors*/     {-1,       1,       0,},
+             
+    };
+
 
     protected int getId() {
         return this.id;
@@ -20,7 +29,6 @@ public class GameObject {
     public void setName(String name) {
         this.name = name;
     }
-
 
     @Override
     public String toString() {
